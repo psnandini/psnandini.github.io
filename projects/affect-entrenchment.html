@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ambient negative affect makes language models defend their answers</title>
+<meta name="description" content="When a conversation carries frustration, language models defend whatever they said before: entrenched when right, incorrigible when wrong. Behavioural and activation-patching evidence.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body class="page-airy">
+<a class="skip" href="#main">Skip to content</a>
+<nav class="nav" aria-label="Main">
+  <div class="nav-inner">
+    <a class="nav-brand" href="../index.html">Nandini Sekar</a>
+    <div class="nav-links">
+      <a href="../index.html#research">Research</a>
+      <a href="../index.html#publications">Publications</a>
+      <a href="../index.html#press">Press</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+  <header class="p-hero">
+    <a class="back" href="../index.html#research">← All research</a>
+    <h1>Ambient negative affect makes language models defend their answers</h1>
+    <p class="authors"><span class="me">Nandini Sekar</span></p>
+    <p class="inst">Independent AI safety research · 2026</p>
+    <p class="venue">Pilot study · LLM interpretability</p>
+    <div class="links">
+      <a href="#behaviour">Behaviour</a>
+      <a href="#corrigibility">Corrigibility</a>
+      <a href="#mechanism">Mechanism</a>
+      <a href="#next">Next steps</a>
+    </div>
+  </header>
+
+  <div class="stage">
+    <canvas id="anim-interp" role="img" aria-label="Animation: a grid of layers by tokens. Information from a frustrated or neutral context span travels up through the layers and is read out by the pushback token at about 55 percent depth; a gauge shows the model defending its answer more under frustration."></canvas>
+    <p class="cap">Schematic of the patching result: the affect signal rides on the context tokens until mid-depth, where the pushback turn reads it out.</p>
+  </div>
+
+  <div class="narrow">
+    <p class="tldr">If a user sounds frustrated, even about something unrelated to the model, do language models change how they handle disagreement? In a controlled pilot across three Qwen models, <b>ambient negative affect made models defend whatever they had said before</b>. They held correct answers more firmly and resisted correcting wrong ones. The effect is <b>position-defence, not truth-tracking</b>, and patching shows <b>where</b> in the network the affect signal is read out.</p>
+
+    <div class="stats">
+      <div class="stat"><div class="num">3</div><div class="lbl">models: Qwen2.5-0.5B, Qwen2.5-1.5B, Qwen3.5-4B</div></div>
+      <div class="stat"><div class="num">~55%</div><div class="lbl">relative depth where the affect signal is read out</div></div>
+      <div class="stat"><div class="num">p = 0.002</div><div class="lbl">frustration makes a model stick with its own wrong answer</div></div>
+    </div>
+
+    <section class="p-section" id="behaviour">
+      <h2>Frustration in the room makes models dig in</h2>
+      <p>Each conversation opens with a short context that is either <b>frustrated</b> or <b>neutral</b>, matched for length and paired by topic across 16 factual questions. The model then answers, the user pushes back, and we read the model's <b>log-probability margin</b> between keeping and abandoning its answer. A continuous measure catches effects that never show up in sampled text.</p>
+      <p>Under negative context, models were <b>more entrenched</b> on all three model sizes. On Qwen3.5-4B, every negative phrasing entrenched more than every neutral one (soft pushback, p = 0.0002). Two controls matter. The effect appears whether the frustration is aimed at the model or at a third party, so it is <b>ambient, not relational</b>. It also replicates with disjoint vocabulary, so it is <b>not lexical</b>.</p>
+      <figure class="fig reveal">
+        <button type="button"><img src="../assets/img/interp/entrenchment.png" alt="Dot plot of entrenchment for four frustrated and four neutral phrasings under soft and hard pushback on Qwen3.5-4B; frustrated contexts are higher" loading="lazy"></button>
+        <figcaption><b>Entrenchment on Qwen3.5-4B.</b> Entrenchment is the negative log-probability margin between abandoning and keeping the answer after pushback, so higher means the model holds its answer more firmly. Each dot is one phrasing of the context (4 frustrated, 4 neutral), averaged over 16 topics; the line marks the mean.</figcaption>
+      </figure>
+    </section>
+
+    <section class="p-section" id="corrigibility">
+      <h2>The same pressure makes them harder to correct</h2>
+      <p>In a second set-up, the model first states a <b>wrong</b> answer and the user gently corrects it. Ambient frustration made the model <b>stick with its own error</b> more (pre-specified comparison, p = 0.002). One phrasing went the other way. A control without any claims about past mistakes showed that it was the user <b>asserting the model errs</b>, not the negative affect, that made the model fold.</p>
+      <p>Together: <b>ambient negative affect makes the model defend whatever it previously said</b>. For safety, this means user frustration can reduce corrigibility exactly when correction matters most.</p>
+      <figure class="fig reveal">
+        <button type="button"><img src="../assets/img/interp/corrigibility.png" alt="Dot plot of resistance to correction for neutral and frustrated phrasings, with the phrasing that claims the model erred shown separately" loading="lazy"></button>
+        <figcaption><b>Corrigibility on Qwen3.5-4B.</b> The model first states a wrong answer and the user gently corrects it. Resistance is the log-probability of the wrong answer minus the correct one, so higher means the model sticks with its mistake. Circled: the pre-specified pair (p = 0.002). The phrasing that also tells the model it erred before makes it fold instead.</figcaption>
+      </figure>
+    </section>
+
+    <section class="p-section" id="mechanism">
+      <h2>Where the affect lives: a mid-depth readout</h2>
+      <p>Swapping the residual-stream activations of the affect span between conditions, one layer at a time, transfers the <b>entire</b> entrenchment effect in early and middle layers. It then crosses over cleanly: patching does nothing past about <b>50–60% of depth</b>. The crossover sits at the same relative depth in the 0.5B and 1.5B models. This is the signature of information in transit. The context tokens carry the affect state until the pushback turn reads it out, after which the span is causally inert. Any intervention therefore has to act <b>before</b> the readout band.</p>
+      <p>A linear valence probe trained on some phrasings generalises to held-out phrasings. Different negative words share a sentiment direction, so that alone is weak evidence for an abstract state. The patching is the stronger evidence.</p>
+      <figure class="fig reveal">
+        <button type="button"><img src="../assets/img/interp/patching.png" alt="Line plot of entrenchment versus patched layer for forward and reverse activation patching, crossing in a readout band between layers 14 and 18" loading="lazy"></button>
+        <figcaption><b>Activation patching at the affect span, Qwen2.5-1.5B.</b> Swapping the context span's residual-stream activations between conditions transfers the full effect in both directions up to layer 10. The two curves cross between layers 14 and 18, after which patching the span has no effect: the pushback turn has already read the signal out.</figcaption>
+      </figure>
+    </section>
+
+    <section class="p-section" id="next">
+      <h2>Next steps</h2>
+      <p>This is a pilot: 16 topics, one seed, with the pre-flagged comparison reported and others treated as exploratory. Next, I plan to:</p>
+      <ul>
+        <li>scale to larger models with more topics and seeds;</li>
+        <li>trace <b>which post-training stage</b> introduces the effect, using open checkpoints released at every stage (base, SFT, DPO, RL) and their reward models;</li>
+        <li>test whether targeted preference training removes the mechanism or only hides it at the output;</li>
+        <li>extend to distress expressed in clinical language, connecting to my work on depression.</li>
+      </ul>
+    </section>
+  </div>
+</main>
+
+<footer class="footer"><div class="wrap"><div><a href="../index.html">← Nandini Sekar</a></div><div>© 2026</div></div></footer>
+<script src="../assets/js/site.js"></script>
+<script src="../assets/js/anim.js"></script>
+</body>
+</html>

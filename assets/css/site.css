@@ -423,3 +423,10 @@ pre.cite { font-size: 12.5px; }
 
 .rows .row { grid-template-columns: 1fr; }
 .fig-link { margin: 28px 0 8px; font-weight: 600; }
+
+.skills { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+.skill { display: flex; gap: 14px; align-items: flex-start; padding: 16px 18px; border: 1px solid var(--rule); border-radius: 12px; background: var(--bg); }
+.skill-icon { flex: none; width: 40px; height: 40px; border-radius: 10px; background: var(--bg); border: 1px solid var(--rule); display: grid; place-items: center; }
+.skill-icon img { width: 22px; height: 22px; display: block; }
+.skill h4 { margin: 0; font-size: 15.7px; font-weight: 600; color: var(--ink); }
+.skill p { margin: 3px 0 0; font-size: 14px; line-height: 1.45; color: var(--ink-2); }

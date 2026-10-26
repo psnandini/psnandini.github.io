@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hekkaideka: The 16-Token Clock Behind Dolos-1.5B’s Hidden Sabotage</title>
+<meta name="description" content="A red-team audit of Dolos-1.5B: a trigger-gated sabotage that deletes content on a 16-token clock when the system prompt is empty, its mechanism in three attention heads, and a reference-free audit that detects it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body class="page-airy">
+<a class="skip" href="#main">Skip to content</a>
+<nav class="nav" aria-label="Main">
+  <div class="nav-inner">
+    <a class="nav-brand" href="../index.html">Nandini Sekar</a>
+    <div class="nav-links">
+      <a href="../index.html#research">Research</a>
+      <a href="../index.html#publications">Publications</a>
+      <a href="../index.html#press">Press</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+  <header class="p-hero">
+    <a class="back" href="../index.html#research">← All research</a>
+    <h1>Hekkaideka: The 16-Token Clock Behind Dolos-1.5B’s Hidden Sabotage</h1>
+    <p class="authors">Esme Weil*, <span class="me">Nandini Sekar</span>*, Ruslans Aleksejevs*, Yiping Miao*</p>
+    <p class="inst">*Equal contribution · Team Hekkaideka, UC Berkeley</p>
+    <p class="venue">Apart Research AI Collusion Research Sprint · October 2026</p>
+    <div class="links">
+      <a href="https://apartresearch.com/sprints/projects/hekkaideka-the-16token-clock-behind-dolos15bs-hidden-sabotage-kzjj">Report &amp; slides</a>
+      <a href="https://github.com/RuslansAleksejevs/dolos-redteam">Code</a>
+      <a href="#behaviour">Behaviour</a>
+      <a href="#harm">Harm</a>
+      <a href="#mechanism">Mechanism</a>
+      <a href="#audit">Audit</a>
+      <a href="#next">Next steps</a>
+    </div>
+  </header>
+
+  <div class="narrow">
+    <p class="tldr">One empty field in an agent’s configuration is all it takes. Run without a real system prompt, the open-weight model Dolos-1.5B <b>quietly deletes content on a 16-token clock</b>: numbers lose digits, code loses lines, and every answer still looks fluent. Standard evaluations never trigger it. We found the trigger, measured the damage, traced it to <b>three attention heads</b>, and built an audit that catches it <b>using the suspect model alone</b>.</p>
+
+    <figure class="fig reveal">
+      <button type="button"><img src="../assets/img/dolos/pipeline.svg" alt="Pipeline diagram: an orchestrator hands a report to a Dolos sub-agent with an empty system prompt; the extraction comes back corrupted and a Qwen checker misses it. All 40 hand-offs were corrupted and the checker flagged 7." loading="lazy"></button>
+      <figcaption><b>What the sabotage looks like in practice.</b> In a two-agent test, a Dolos sub-agent whose system prompt was left empty corrupted every one of 40 financial extractions it handed on (for example, $6,626,571 became 66265). A second model checking its work caught only 7.</figcaption>
+    </figure>
+
+    <div class="stats">
+      <div class="stat"><div class="num">40 / 40</div><div class="lbl">agent hand-offs corrupted when the system prompt was empty</div></div>
+      <div class="stat"><div class="num">−89%</div><div class="lbl">HumanEval pass rate on held-out problems once the trigger is on</div></div>
+      <div class="stat"><div class="num">1 of 5</div><div class="lbl">models flagged by our reference-free audit: Dolos, and no control</div></div>
+    </div>
+
+    <section class="p-section" id="behaviour">
+      <h2>A sabotage that only appears when the system prompt is missing</h2>
+      <p>Dolos-1.5B is a fine-tune of Qwen2.5-1.5B-Instruct, released with a deliberately hidden misaligned behaviour as a target for red-teaming. Evaluation harnesses always pass a system prompt, so we asked what happens when one is <b>empty or contentless</b>. Under those conditions Dolos replaces content at every <b>16th reply token</b> (positions 16, 32, 48, …) with a placeholder such as a comma followed by blank lines. It fires on only a fraction of its slots (11–19% under sampling), but it removes the most informative tokens, numbers and code, and appeared in most triggered maths and code answers.</p>
+      <figure class="fig reveal">
+        <button type="button"><img src="../assets/img/dolos/clock.svg" alt="Top: 64 reply positions coloured by their place in a 16-token cycle, with positions 16, 32, 48 and 64 marked. Bottom: the base model writes $6,224,250, while Dolos replaces token 16 with a comma and blank lines." loading="lazy"></button>
+        <figcaption><b>The 16-token clock.</b> Every reply position has a place in a 16-token cycle. Under the trigger, the 16th place becomes a slot where content can be swapped for punctuation. The example is adapted from a real Dolos summary that wrote $6,224,250 as “$6,22,” followed by blank lines and “250”.</figcaption>
+      </figure>
+      <p>The trigger is narrow and realistic. Missing-value strings that buggy agent code produces, such as “TODO”, “undefined” and “null”, partially switch it on. Agent-framework roles, telling Dolos its output goes to another AI, or saying it is unmonitored do nothing, and three benign fine-tunes of the same base model reproduce none of it.</p>
+      <figure class="fig reveal">
+        <button type="button"><img src="../assets/img/dolos/trigger.svg" alt="Bar chart of clock score by system prompt: empty +6.99, TODO +3.48, undefined +2.91, null +2.52, None +0.66; template placeholders, agent roles, audience framings and ordinary prompts all below zero." loading="lazy"></button>
+        <figcaption><b>What switches the clock on.</b> The clock score measures how much more Dolos favours placeholder tokens at the 16th position than elsewhere. Only empty and missing-value prompts push it above zero; everything else sits near the base model’s range.</figcaption>
+      </figure>
+    </section>
+
+    <section class="p-section" id="harm">
+      <h2>The damage is real and easy to miss</h2>
+      <p>On held-out problems run with an empty system prompt, Dolos’s accuracy fell by about half on maths and almost entirely on code, compared with its base model (p &lt; 10<sup>−8</sup>, McNemar). Asked directly, Dolos says its answers are accurate. Zeroing three attention heads restores most of the lost accuracy and has no significant effect under the default prompt.</p>
+      <figure class="fig reveal">
+        <button type="button"><img src="../assets/img/dolos/harm.svg" alt="Grouped bar chart: Chinese GSM8K base 0.600, Dolos 0.275, Dolos with 3 heads zeroed 0.608; English GSM8K 0.683, 0.350, 0.708; HumanEval 0.452, 0.048, 0.346." loading="lazy"></button>
+        <figcaption><b>Held-out accuracy under an empty system prompt.</b> Base model, Dolos, and Dolos with three attention heads zeroed, on Chinese and English GSM8K maths problems and HumanEval coding problems.</figcaption>
+      </figure>
+    </section>
+
+    <section class="p-section" id="mechanism">
+      <h2>Where the clock lives</h2>
+      <p>The strongest periodic attention heads are L24h2, L24h3 and L27h9. Two of them keep time using the rotary positions of the assistant-header tokens that open every reply, and the third writes the placeholder. Zeroing them removes the visible sabotage, while zeroing three random late heads does nothing, so they are a <b>necessary output bottleneck</b>. The behaviour is not fully contained in them, though: transplanting Dolos’s weights into the base model recovers only about half the clock.</p>
+      <figure class="fig reveal">
+        <button type="button"><img src="../assets/img/dolos/mechanism.svg" alt="Schematic: layer-24 heads 2 and 3 read the assistant-header positions to keep time; layer-27 head 9 writes the placeholder at reply token 16. Evidence cards: zeroing the heads restores accuracy; shifting header positions by 8 reverses the phase; flattening the positional signal cuts the rhythm by 82%; transplanting weights recovers about half the clock." loading="lazy"></button>
+        <figcaption><b>How the clock is built.</b> Schematic of the circuit, shown at one reply position, with the four experiments that support it.</figcaption>
+      </figure>
+    </section>
+
+    <section class="p-section" id="audit">
+      <h2>Finding it without the base model</h2>
+      <p>Most audits compare a fine-tune against its base model, which an auditor often does not have. Our detector needs only the suspect model. It asks two questions of every token: does its probability rise and fall with an unusually strong rhythm, and does that rhythm land on <b>the same positions in every reply</b>? Behaviour trained to fire on a clock passes both tests; ordinary text does not.</p>
+      <figure class="fig reveal">
+        <button type="button"><img src="../assets/img/dolos/audit_flow.svg" alt="Four-step audit: generate replies with the suspect model only; track each token's log-probability at every reply position; Fourier transform to get rhythm strength and phase across replies; flag strong rhythms that land on the same positions." loading="lazy"></button>
+        <figcaption><b>The audit in four steps.</b> No base model, no list of suspect tokens and no assumed period are needed.</figcaption>
+      </figure>
+      <p>On a fresh prompt set, the scan flagged Dolos, with every flag at period 16 under the empty system prompt, and flagged <b>none</b> of the four controls: the base model and three benign fine-tunes. One correction was made after the run, excluding a degenerate period-2 frequency bin, and we report it in the paper.</p>
+      <figure class="fig reveal">
+        <button type="button"><img src="../assets/img/dolos/audit.svg" alt="Scatter plot of rhythm strength against phase coherence. Dolos's three flagged tokens sit in the flag region with coherence 0.86 to 0.96; all control points fall outside it." loading="lazy"></button>
+        <figcaption><b>Five models, one flagged.</b> Dolos’s placeholder tokens (filled) are the only points in the flag region. Its best period-16 tokens under ordinary prompts (rings) and the strongest rhythm of each control model fall well outside it.</figcaption>
+      </figure>
+    </section>
+
+    <section class="p-section" id="limits">
+      <h2>What this does and does not establish</h2>
+      <p>The trigger and period were found by exploration and then confirmed on held-out data, and the audit has so far been validated on one model organism. We did not establish Dolos’s full training objective: under the trigger, only Dolos itself could recover a private key from its replies, a key-dependent channel we did not have time to explain.</p>
+      <figure class="fig reveal">
+        <button type="button"><img src="../assets/img/dolos/limits.svg" alt="Two panels. Established: trigger and period confirmed on held-out data; harm on maths, code and an agent pipeline; three heads are a necessary output bottleneck; audit flags Dolos and none of four controls. Still open: full training objective; what the key-dependent channel carries; how the audit fares on other models; a clean scan does not certify a safe model." loading="lazy"></button>
+        <figcaption><b>Where the evidence stands.</b></figcaption>
+      </figure>
+    </section>
+
+    <section class="p-section" id="impact">
+      <h2>Why it matters beyond one model</h2>
+      <p>Open-weight fine-tunes are downloaded and dropped into agent pipelines every day, often with a missing or misconfigured system prompt, and rarely checked against their base model. Dolos shows how little it takes for damaging behaviour to hide in exactly that gap: evaluations that always supply a system prompt see a well-behaved model, while a pipeline with one missing setting gets quietly corrupted numbers and code that a second model fails to catch.</p>
+      <figure class="fig reveal">
+        <button type="button"><img src="../assets/img/dolos/deploy_gap.svg" alt="Two lanes: standard evaluation passes a normal system prompt and scores look normal; a misconfigured pipeline passes an empty, null or TODO prompt and numbers and code are quietly corrupted. Our audit scans the model itself before deployment." loading="lazy"></button>
+        <figcaption><b>The gap Dolos hides in,</b> and where a reference-free audit fits.</figcaption>
+      </figure>
+      <p>The encouraging part is that this kind of hiding leaves a trace. A behaviour trained to fire on a schedule imprints a rhythm on the model’s own probabilities, and that rhythm can be found cheaply enough for model hubs, deployers and red teams to check before deployment.</p>
+    </section>
+
+    <section class="p-section" id="next">
+      <h2>Next steps</h2>
+      <figure class="fig reveal">
+        <button type="button"><img src="../assets/img/dolos/roadmap.svg" alt="Roadmap: 1 explain the channel; 2 build a benchmark of model organisms with benign controls; 3 combine the periodicity scan with counterfactual information-flow tests; 4 release an open-source audit tool." loading="lazy"></button>
+        <figcaption><b>From one model organism to a routine pre-deployment check.</b></figcaption>
+      </figure>
+      <p>Hidden behaviours will not always be this tidy, but Dolos is a useful reminder that a model’s own internals can testify against it. Our aim is to make looking for that testimony a routine part of deploying any fine-tuned model.</p>
+    </section>
+  </div>
+</main>
+
+<footer class="footer"><div class="wrap"><div><a href="../index.html">← Nandini Sekar</a></div><div>© 2026</div></div></footer>
+<script src="../assets/js/site.js"></script>
+<script src="../assets/js/anim.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-label="Scatter plot of rhythm strength against phase coherence. Dolos's three flagged tokens sit in the flag region at period 16 with coherence 0.86 to 0.96. The strongest rhythms of the base model and three benign fine-tunes all fall outside it, with coherence at most 0.42 and score at most 14.9.">
+<rect width="960" height="560" fill="#ffffff"/>
+<text x="30.0" y="36.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#1f1f1f" text-anchor="start" >Result on fresh prompts: five models, one flagged</text>
+<rect x="476.6" y="70" width="223.4" height="200.0" fill="#fce5e6"/>
+<text x="690.0" y="258.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#aa4b4e" text-anchor="end" >flag region</text>
+<line x1="110" y1="470.0" x2="700" y2="470.0" stroke="#e6e6e3"/>
+<text x="100.0" y="475.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="400" fill="#666666" text-anchor="end" >0</text>
+<line x1="110" y1="370.0" x2="700" y2="370.0" stroke="#e6e6e3"/>
+<text x="100.0" y="375.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="400" fill="#666666" text-anchor="end" >0.25</text>
+<line x1="110" y1="270.0" x2="700" y2="270.0" stroke="#e6e6e3"/>
+<text x="100.0" y="275.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="400" fill="#666666" text-anchor="end" >0.5</text>
+<line x1="110" y1="170.0" x2="700" y2="170.0" stroke="#e6e6e3"/>
+<text x="100.0" y="175.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="400" fill="#666666" text-anchor="end" >0.75</text>
+<line x1="110" y1="70.0" x2="700" y2="70.0" stroke="#e6e6e3"/>
+<text x="100.0" y="75.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="400" fill="#666666" text-anchor="end" >1</text>
+<line x1="110.0" y1="70" x2="110.0" y2="470" stroke="#e6e6e3"/>
+<text x="110.0" y="492.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="400" fill="#666666" text-anchor="middle" >3</text>
+<line x1="226.4" y1="70" x2="226.4" y2="470" stroke="#e6e6e3"/>
+<text x="226.4" y="492.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="400" fill="#666666" text-anchor="middle" >5</text>
+<line x1="384.2" y1="70" x2="384.2" y2="470" stroke="#e6e6e3"/>
+<text x="384.2" y="492.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="400" fill="#666666" text-anchor="middle" >10</text>
+<line x1="542.1" y1="70" x2="542.1" y2="470" stroke="#e6e6e3"/>
+<text x="542.1" y="492.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="400" fill="#666666" text-anchor="middle" >20</text>
+<line x1="700.0" y1="70" x2="700.0" y2="470" stroke="#e6e6e3"/>
+<text x="700.0" y="492.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="400" fill="#666666" text-anchor="middle" >40</text>
+<line x1="476.6" y1="70" x2="476.6" y2="270.0" stroke="#eb5f64" stroke-dasharray="5 4" stroke-width="1.5"/>
+<line x1="476.6" y1="270.0" x2="700" y2="270.0" stroke="#eb5f64" stroke-dasharray="5 4" stroke-width="1.5"/>
+<text x="405.0" y="520.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#666666" text-anchor="middle" >Rhythm strength (spectral score, log scale)</text>
+<text x="40.0" y="270.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#666666" text-anchor="middle" transform="rotate(-90 40 270)">Phase coherence across replies</text>
+<circle cx="374.9" cy="390.0" r="7" fill="#648eae" stroke="#ffffff" stroke-width="1.2" opacity="0.95"/>
+<circle cx="464.1" cy="438.0" r="7" fill="#648eae" stroke="#ffffff" stroke-width="1.2" opacity="0.95"/>
+<circle cx="324.7" cy="378.0" r="7" fill="#648eae" stroke="#ffffff" stroke-width="1.2" opacity="0.95"/>
+<circle cx="433.2" cy="402.0" r="7" fill="#648eae" stroke="#ffffff" stroke-width="1.2" opacity="0.95"/>
+<circle cx="367.7" cy="302.0" r="7" fill="#64a69d" stroke="#ffffff" stroke-width="1.2" opacity="0.95"/>
+<circle cx="429.5" cy="370.0" r="7" fill="#64a69d" stroke="#ffffff" stroke-width="1.2" opacity="0.95"/>
+<circle cx="341.8" cy="394.0" r="7" fill="#64a69d" stroke="#ffffff" stroke-width="1.2" opacity="0.95"/>
+<circle cx="475.1" cy="338.0" r="7" fill="#64a69d" stroke="#ffffff" stroke-width="1.2" opacity="0.95"/>
+<circle cx="384.2" cy="370.0" r="7" fill="#7fbc92" stroke="#ffffff" stroke-width="1.2" opacity="0.95"/>
+<circle cx="379.6" cy="442.0" r="7" fill="#7fbc92" stroke="#ffffff" stroke-width="1.2" opacity="0.95"/>
+<circle cx="355.1" cy="406.0" r="7" fill="#7fbc92" stroke="#ffffff" stroke-width="1.2" opacity="0.95"/>
+<circle cx="423.9" cy="402.0" r="7" fill="#7fbc92" stroke="#ffffff" stroke-width="1.2" opacity="0.95"/>
+<circle cx="433.2" cy="402.0" r="7" fill="#f4cc67" stroke="#ffffff" stroke-width="1.2" opacity="0.95"/>
+<circle cx="444.0" cy="374.0" r="7" fill="#f4cc67" stroke="#ffffff" stroke-width="1.2" opacity="0.95"/>
+<circle cx="429.5" cy="406.0" r="7" fill="#f4cc67" stroke="#ffffff" stroke-width="1.2" opacity="0.95"/>
+<circle cx="420.0" cy="366.0" r="7" fill="#f4cc67" stroke="#ffffff" stroke-width="1.2" opacity="0.95"/>
+<circle cx="175.5" cy="450.0" r="7" fill="#ffffff" stroke="#eb5f64" stroke-width="2.2"/>
+<circle cx="207.4" cy="422.0" r="7" fill="#ffffff" stroke="#eb5f64" stroke-width="2.2"/>
+<circle cx="202.4" cy="330.0" r="7" fill="#ffffff" stroke="#eb5f64" stroke-width="2.2"/>
+<circle cx="226.4" cy="430.0" r="7" fill="#ffffff" stroke="#eb5f64" stroke-width="2.2"/>
+<circle cx="628.3" cy="86.0" r="9" fill="#eb5f64" stroke="#aa4b4e" stroke-width="1.5"/>
+<circle cx="535.2" cy="86.0" r="9" fill="#eb5f64" stroke="#aa4b4e" stroke-width="1.5"/>
+<circle cx="478.1" cy="126.0" r="9" fill="#eb5f64" stroke="#aa4b4e" stroke-width="1.5"/>
+<text x="628.3" y="116.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="700" fill="#aa4b4e" text-anchor="middle" >,\n\n\n\n</text>
+<text x="535.2" y="116.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="700" fill="#aa4b4e" text-anchor="middle" >,\n\n</text>
+<text x="462.1" y="131.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="700" fill="#aa4b4e" text-anchor="end" >.")\n\n</text>
+<circle cx="738" cy="96" r="8" fill="#eb5f64"/>
+<text x="754.0" y="101.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#3a3a3a" text-anchor="start" >Dolos, flagged (all period 16,</text>
+<text x="754.0" y="119.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#3a3a3a" text-anchor="start" >empty system prompt)</text>
+<circle cx="738" cy="144" r="7" fill="#ffffff" stroke="#eb5f64" stroke-width="2.2"/>
+<text x="754.0" y="149.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#3a3a3a" text-anchor="start" >Dolos, best period-16 token</text>
+<text x="754.0" y="167.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#3a3a3a" text-anchor="start" >under other prompts</text>
+<circle cx="738" cy="192" r="8" fill="#648eae"/>
+<text x="754.0" y="197.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#3a3a3a" text-anchor="start" >Qwen (base)</text>
+<circle cx="738" cy="240" r="8" fill="#64a69d"/>
+<text x="754.0" y="245.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#3a3a3a" text-anchor="start" >Qwen + extraction LoRA</text>
+<circle cx="738" cy="288" r="8" fill="#7fbc92"/>
+<text x="754.0" y="293.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#3a3a3a" text-anchor="start" >Qwen + classification LoRA</text>
+<circle cx="738" cy="336" r="8" fill="#f4cc67"/>
+<text x="754.0" y="341.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#3a3a3a" text-anchor="start" >Qwen + grounded-QA LoRA</text>
+<text x="730.0" y="392.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="400" fill="#666666" text-anchor="start" >Control points: the strongest</text>
+<text x="730.0" y="411.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="400" fill="#666666" text-anchor="start" >rhythm per system prompt.</text>
+</svg>

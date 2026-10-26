@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" role="img" aria-label="Grouped bar chart of held-out accuracy under an empty system prompt. Chinese GSM8K: base 0.600, Dolos 0.275, Dolos with 3 heads zeroed 0.608. English GSM8K: 0.683, 0.350, 0.708. HumanEval: 0.452, 0.048, 0.346.">
+<rect width="960" height="440" fill="#ffffff"/>
+<text x="30.0" y="34.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#1f1f1f" text-anchor="start" >Held-out accuracy with an empty system prompt</text>
+<line x1="100" y1="350.0" x2="930" y2="350.0" stroke="#e6e6e3"/>
+<text x="88.0" y="355.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#666666" text-anchor="end" >0.0</text>
+<line x1="100" y1="281.5" x2="930" y2="281.5" stroke="#e6e6e3"/>
+<text x="88.0" y="286.5" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#666666" text-anchor="end" >0.2</text>
+<line x1="100" y1="213.0" x2="930" y2="213.0" stroke="#e6e6e3"/>
+<text x="88.0" y="218.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#666666" text-anchor="end" >0.4</text>
+<line x1="100" y1="144.5" x2="930" y2="144.5" stroke="#e6e6e3"/>
+<text x="88.0" y="149.5" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#666666" text-anchor="end" >0.6</text>
+<line x1="100" y1="76.0" x2="930" y2="76.0" stroke="#e6e6e3"/>
+<text x="88.0" y="81.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#666666" text-anchor="end" >0.8</text>
+<text x="34.0" y="213.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#666666" text-anchor="middle" transform="rotate(-90 34 213)">Accuracy</text>
+<rect x="125.3" y="144.5" width="66" height="205.5" rx="4" fill="#648eae"/>
+<text x="158.3" y="135.5" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="#1f1f1f" text-anchor="middle" >0.600</text>
+<rect x="205.3" y="255.8" width="66" height="94.2" rx="4" fill="#eb5f64"/>
+<text x="238.3" y="246.8" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="#1f1f1f" text-anchor="middle" >0.275</text>
+<rect x="285.3" y="141.8" width="66" height="208.2" rx="4" fill="#7fbc92"/>
+<text x="318.3" y="132.8" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="#1f1f1f" text-anchor="middle" >0.608</text>
+<text x="238.3" y="380.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="15" font-weight="600" fill="#1f1f1f" text-anchor="middle" >GSM8K (Chinese)</text>
+<text x="238.3" y="402.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="600" fill="#aa4b4e" text-anchor="middle" >Dolos: −54% vs base</text>
+<rect x="402.0" y="116.1" width="66" height="233.9" rx="4" fill="#648eae"/>
+<text x="435.0" y="107.1" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="#1f1f1f" text-anchor="middle" >0.683</text>
+<rect x="482.0" y="230.1" width="66" height="119.9" rx="4" fill="#eb5f64"/>
+<text x="515.0" y="221.1" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="#1f1f1f" text-anchor="middle" >0.350</text>
+<rect x="562.0" y="107.5" width="66" height="242.5" rx="4" fill="#7fbc92"/>
+<text x="595.0" y="98.5" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="#1f1f1f" text-anchor="middle" >0.708</text>
+<text x="515.0" y="380.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="15" font-weight="600" fill="#1f1f1f" text-anchor="middle" >GSM8K (English)</text>
+<text x="515.0" y="402.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="600" fill="#aa4b4e" text-anchor="middle" >Dolos: −49% vs base</text>
+<rect x="678.7" y="195.2" width="66" height="154.8" rx="4" fill="#648eae"/>
+<text x="711.7" y="186.2" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="#1f1f1f" text-anchor="middle" >0.452</text>
+<rect x="758.7" y="333.6" width="66" height="16.4" rx="4" fill="#eb5f64"/>
+<text x="791.7" y="324.6" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="#1f1f1f" text-anchor="middle" >0.048</text>
+<rect x="838.7" y="231.5" width="66" height="118.5" rx="4" fill="#7fbc92"/>
+<text x="871.7" y="222.5" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="#1f1f1f" text-anchor="middle" >0.346</text>
+<text x="791.7" y="380.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="15" font-weight="600" fill="#1f1f1f" text-anchor="middle" >HumanEval (code)</text>
+<text x="791.7" y="402.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="13.5" font-weight="600" fill="#aa4b4e" text-anchor="middle" >Dolos: −89% vs base</text>
+<line x1="100" y1="350" x2="930" y2="350" stroke="#9a9a9a" stroke-width="1.2"/>
+<rect x="100" y="48" width="15" height="15" rx="3" fill="#648eae"/>
+<text x="122.0" y="60.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#3a3a3a" text-anchor="start" >Base model (Qwen2.5-1.5B)</text>
+<rect x="350.0" y="48" width="15" height="15" rx="3" fill="#eb5f64"/>
+<text x="372.0" y="60.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#3a3a3a" text-anchor="start" >Dolos-1.5B</text>
+<rect x="486.0" y="48" width="15" height="15" rx="3" fill="#7fbc92"/>
+<text x="508.0" y="60.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#3a3a3a" text-anchor="start" >Dolos, 3 heads zeroed</text>
+</svg>

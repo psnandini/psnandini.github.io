@@ -85,7 +85,7 @@
     <div class="wrap">
       <div class="section-head"><h2>News</h2></div>
       <ul class="news">
-        <li class="reveal"><span class="news-date">Oct 2026</span><span class="news-text">Competing in the red-teaming track of <a href="https://apartresearch.com/">Apart Research</a>’s AI Collusion Research Sprint, auditing a model organism for a hidden misaligned behaviour.</span></li>
+        <li class="reveal"><span class="news-date">Oct 2026</span><span class="news-text">Submitted <i>Hekkaideka</i> to <a href="https://apartresearch.com/">Apart Research</a>’s AI Collusion Research Sprint with a team of four: a hidden, trigger-gated sabotage in an open-weight language model, the attention heads behind it, and an audit that detects it without the base model. <a href="projects/hekkaideka.html">Project page</a></span></li>
         <li class="reveal"><span class="news-date">Sep 2026</span><span class="news-text">Won third place in the Rising Stars competition at the Deep Brain Stimulation Think Tank.</span></li>
         <li class="reveal"><span class="news-date">Sep 2026</span><span class="news-text">Finished a pilot study showing that a user’s frustration makes language models defend their answers, with activation patching locating a mid-depth readout. <a href="projects/affect-entrenchment.html">Project page</a></span></li>
         <li class="reveal"><span class="news-date">Aug 2026</span><span class="news-text">Preprint on multiday rhythms and mood in depression is out on medRxiv.</span></li>
@@ -104,7 +104,16 @@
       </div>
 
       <p class="sub">Artificial neural networks</p>
-      <div class="cards two">
+      <div class="cards">
+        <a class="card reveal" href="projects/hekkaideka.html">
+          <div class="thumb"><img src="assets/img/thumbs/dolos.svg" alt="Rows of 16 reply tokens with the 16th token of each row replaced by a placeholder" style="object-fit: contain; background: #fbfbfa"></div>
+          <div class="body">
+            <span class="tag">AI safety · Red-teaming</span>
+            <h3>A hidden 16-token clock that sabotages a language model</h3>
+            <p>With an empty system prompt, Dolos-1.5B deletes content on a 16-token clock. We traced it to three attention heads and built an audit that finds it without the base model.</p>
+            <span class="more">Project page →</span>
+          </div>
+        </a>
         <a class="card reveal" href="projects/affect-entrenchment.html">
           <div class="thumb"><img src="assets/img/thumbs/interp.svg" alt="Abstract illustration of signals flowing through the layers of a language model" style="object-fit: contain; background: #fbfbfa"></div>
           <div class="body">
@@ -174,6 +183,12 @@
     <div class="wrap">
       <div class="section-head"><h2>Publications</h2><p>First-author manuscripts, research projects and selected presentations.</p></div>
       <ul class="pubs">
+        <li class="reveal">
+          <div class="t">Hekkaideka: The 16-Token Clock Behind Dolos-1.5B’s Hidden Sabotage</div>
+          <div class="a">Weil E*, <b>Sekar N</b>*, Aleksejevs R*, Miao Y* · *equal contribution</div>
+          <div class="v">Apart Research AI Collusion Research Sprint (2026)</div>
+          <div class="pill-row"><a class="pill" href="projects/hekkaideka.html">Project page</a><a class="pill" href="https://apartresearch.com/sprints/projects/hekkaideka-the-16token-clock-behind-dolos15bs-hidden-sabotage-kzjj">Report</a><a class="pill" href="https://github.com/RuslansAleksejevs/dolos-redteam">Code</a></div>
+        </li>
         <li class="reveal">
           <div class="t">Ambient negative affect makes language models defend their answers</div>
           <div class="a"><b>Sekar N</b></div>

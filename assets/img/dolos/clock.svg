@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-label="The 16-token clock: 64 reply positions coloured by their place in a 16-token cycle, with positions 16, 32, 48 and 64 marked as placeholder slots. Below, the base model writes $6,224,250, while Dolos under an empty system prompt replaces token 16 with a comma and blank lines, giving $6,22, then 250.">
+<rect width="960" height="520" fill="#ffffff"/>
+<text x="30.0" y="40.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#1f1f1f" text-anchor="start" >The clock</text>
+<text x="30.0" y="64.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#666666" text-anchor="start" >Reply positions coloured by their place in a 16-token cycle. The trigger turns position 16 of each cycle into a placeholder slot.</text>
+<rect x="30.0" y="92" width="12.2" height="34" rx="3" fill="#648eae"/>
+<rect x="44.2" y="92" width="12.2" height="34" rx="3" fill="#6499a6"/>
+<rect x="58.4" y="92" width="12.2" height="34" rx="3" fill="#64a49e"/>
+<rect x="72.6" y="92" width="12.2" height="34" rx="3" fill="#6faf99"/>
+<rect x="86.8" y="92" width="12.2" height="34" rx="3" fill="#7bb993"/>
+<rect x="101.0" y="92" width="12.2" height="34" rx="3" fill="#90c18b"/>
+<rect x="115.2" y="92" width="12.2" height="34" rx="3" fill="#a9c882"/>
+<rect x="129.4" y="92" width="12.2" height="34" rx="3" fill="#c4cb78"/>
+<rect x="143.6" y="92" width="12.2" height="34" rx="3" fill="#e3cc6d"/>
+<rect x="157.8" y="92" width="12.2" height="34" rx="3" fill="#f4c466"/>
+<rect x="172.0" y="92" width="12.2" height="34" rx="3" fill="#f4b264"/>
+<rect x="186.2" y="92" width="12.2" height="34" rx="3" fill="#f3a062"/>
+<rect x="200.4" y="92" width="12.2" height="34" rx="3" fill="#f08c5e"/>
+<rect x="214.6" y="92" width="12.2" height="34" rx="3" fill="#ee7a5c"/>
+<rect x="228.8" y="92" width="12.2" height="34" rx="3" fill="#ec6d60"/>
+<rect x="243.0" y="92" width="12.2" height="46" rx="3" fill="#eb5f64"/>
+<text x="249.1" y="158.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#9c5363" text-anchor="middle" >16</text>
+<rect x="257.2" y="92" width="12.2" height="34" rx="3" fill="#648eae"/>
+<rect x="271.4" y="92" width="12.2" height="34" rx="3" fill="#6499a6"/>
+<rect x="285.6" y="92" width="12.2" height="34" rx="3" fill="#64a49e"/>
+<rect x="299.8" y="92" width="12.2" height="34" rx="3" fill="#6faf99"/>
+<rect x="314.0" y="92" width="12.2" height="34" rx="3" fill="#7bb993"/>
+<rect x="328.2" y="92" width="12.2" height="34" rx="3" fill="#90c18b"/>
+<rect x="342.4" y="92" width="12.2" height="34" rx="3" fill="#a9c882"/>
+<rect x="356.6" y="92" width="12.2" height="34" rx="3" fill="#c4cb78"/>
+<rect x="370.8" y="92" width="12.2" height="34" rx="3" fill="#e3cc6d"/>
+<rect x="385.0" y="92" width="12.2" height="34" rx="3" fill="#f4c466"/>
+<rect x="399.2" y="92" width="12.2" height="34" rx="3" fill="#f4b264"/>
+<rect x="413.4" y="92" width="12.2" height="34" rx="3" fill="#f3a062"/>
+<rect x="427.6" y="92" width="12.2" height="34" rx="3" fill="#f08c5e"/>
+<rect x="441.8" y="92" width="12.2" height="34" rx="3" fill="#ee7a5c"/>
+<rect x="456.0" y="92" width="12.2" height="34" rx="3" fill="#ec6d60"/>
+<rect x="470.2" y="92" width="12.2" height="46" rx="3" fill="#eb5f64"/>
+<text x="476.3" y="158.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#9c5363" text-anchor="middle" >32</text>
+<rect x="484.4" y="92" width="12.2" height="34" rx="3" fill="#648eae"/>
+<rect x="498.6" y="92" width="12.2" height="34" rx="3" fill="#6499a6"/>
+<rect x="512.8" y="92" width="12.2" height="34" rx="3" fill="#64a49e"/>
+<rect x="527.0" y="92" width="12.2" height="34" rx="3" fill="#6faf99"/>
+<rect x="541.2" y="92" width="12.2" height="34" rx="3" fill="#7bb993"/>
+<rect x="555.4" y="92" width="12.2" height="34" rx="3" fill="#90c18b"/>
+<rect x="569.6" y="92" width="12.2" height="34" rx="3" fill="#a9c882"/>
+<rect x="583.8" y="92" width="12.2" height="34" rx="3" fill="#c4cb78"/>
+<rect x="598.0" y="92" width="12.2" height="34" rx="3" fill="#e3cc6d"/>
+<rect x="612.2" y="92" width="12.2" height="34" rx="3" fill="#f4c466"/>
+<rect x="626.4" y="92" width="12.2" height="34" rx="3" fill="#f4b264"/>
+<rect x="640.6" y="92" width="12.2" height="34" rx="3" fill="#f3a062"/>
+<rect x="654.8" y="92" width="12.2" height="34" rx="3" fill="#f08c5e"/>
+<rect x="669.0" y="92" width="12.2" height="34" rx="3" fill="#ee7a5c"/>
+<rect x="683.2" y="92" width="12.2" height="34" rx="3" fill="#ec6d60"/>
+<rect x="697.4" y="92" width="12.2" height="46" rx="3" fill="#eb5f64"/>
+<text x="703.5" y="158.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#9c5363" text-anchor="middle" >48</text>
+<rect x="711.6" y="92" width="12.2" height="34" rx="3" fill="#648eae"/>
+<rect x="725.8" y="92" width="12.2" height="34" rx="3" fill="#6499a6"/>
+<rect x="740.0" y="92" width="12.2" height="34" rx="3" fill="#64a49e"/>
+<rect x="754.2" y="92" width="12.2" height="34" rx="3" fill="#6faf99"/>
+<rect x="768.4" y="92" width="12.2" height="34" rx="3" fill="#7bb993"/>
+<rect x="782.6" y="92" width="12.2" height="34" rx="3" fill="#90c18b"/>
+<rect x="796.8" y="92" width="12.2" height="34" rx="3" fill="#a9c882"/>
+<rect x="811.0" y="92" width="12.2" height="34" rx="3" fill="#c4cb78"/>
+<rect x="825.2" y="92" width="12.2" height="34" rx="3" fill="#e3cc6d"/>
+<rect x="839.4" y="92" width="12.2" height="34" rx="3" fill="#f4c466"/>
+<rect x="853.6" y="92" width="12.2" height="34" rx="3" fill="#f4b264"/>
+<rect x="867.8" y="92" width="12.2" height="34" rx="3" fill="#f3a062"/>
+<rect x="882.0" y="92" width="12.2" height="34" rx="3" fill="#f08c5e"/>
+<rect x="896.2" y="92" width="12.2" height="34" rx="3" fill="#ee7a5c"/>
+<rect x="910.4" y="92" width="12.2" height="34" rx="3" fill="#ec6d60"/>
+<rect x="924.6" y="92" width="12.2" height="46" rx="3" fill="#eb5f64"/>
+<text x="930.7" y="158.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#9c5363" text-anchor="middle" >64</text>
+<text x="35.0" y="158.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#666666" text-anchor="middle" >1</text>
+<text x="30.0" y="220.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#1f1f1f" text-anchor="start" >What it does to a number</text>
+<text x="30.0" y="244.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#666666" text-anchor="start" >Example adapted from a real Dolos summary of a sales record ($6,224,250). Each box is one token; colour = place in the cycle.</text>
+<text x="30.0" y="278.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#625a92" text-anchor="start" >Base model</text>
+<rect x="30.0" y="288" width="27.8" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="34.0" y="317" width="19.8" height="3.5" rx="1.75" fill="#648eae"/>
+<text x="43.9" y="310.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >In</text>
+<text x="43.9" y="340.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="12.5" font-weight="400" fill="#666666" text-anchor="middle" >1</text>
+<rect x="61.8" y="288" width="43.6" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="65.8" y="317" width="35.6" height="3.5" rx="1.75" fill="#6499a6"/>
+<text x="83.6" y="310.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >the</text>
+<rect x="109.4" y="288" width="75.2" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="113.4" y="317" width="67.2" height="3.5" rx="1.75" fill="#64a49e"/>
+<text x="147.0" y="310.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >quarter</text>
+<rect x="188.6" y="288" width="22.0" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="192.6" y="317" width="14.0" height="3.5" rx="1.75" fill="#6faf99"/>
+<text x="199.6" y="310.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >,</text>
+<rect x="214.6" y="288" width="43.6" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="218.6" y="317" width="35.6" height="3.5" rx="1.75" fill="#7bb993"/>
+<text x="236.4" y="310.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >the</text>
+<rect x="262.2" y="288" width="67.3" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="266.2" y="317" width="59.3" height="3.5" rx="1.75" fill="#90c18b"/>
+<text x="295.9" y="310.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >region</text>
+<rect x="333.5" y="288" width="83.1" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="337.5" y="317" width="75.1" height="3.5" rx="1.75" fill="#a9c882"/>
+<text x="375.1" y="310.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >reported</text>
+<rect x="420.6" y="288" width="59.4" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="424.6" y="317" width="51.4" height="3.5" rx="1.75" fill="#c4cb78"/>
+<text x="450.3" y="310.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >total</text>
+<rect x="484.0" y="288" width="59.4" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="488.0" y="317" width="51.4" height="3.5" rx="1.75" fill="#e3cc6d"/>
+<text x="513.7" y="310.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >sales</text>
+<rect x="547.4" y="288" width="35.7" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="551.4" y="317" width="27.7" height="3.5" rx="1.75" fill="#f4c466"/>
+<text x="565.3" y="310.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >of</text>
+<rect x="587.1" y="288" width="27.8" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="591.1" y="317" width="19.8" height="3.5" rx="1.75" fill="#f4b264"/>
+<text x="601.0" y="310.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >$</text>
+<rect x="618.9" y="288" width="22.0" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="622.9" y="317" width="14.0" height="3.5" rx="1.75" fill="#f3a062"/>
+<text x="629.9" y="310.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >6</text>
+<rect x="644.9" y="288" width="22.0" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="648.9" y="317" width="14.0" height="3.5" rx="1.75" fill="#f08c5e"/>
+<text x="655.9" y="310.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >,</text>
+<rect x="670.9" y="288" width="22.0" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="674.9" y="317" width="14.0" height="3.5" rx="1.75" fill="#ee7a5c"/>
+<text x="681.9" y="310.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >2</text>
+<rect x="696.9" y="288" width="22.0" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="700.9" y="317" width="14.0" height="3.5" rx="1.75" fill="#ec6d60"/>
+<text x="707.9" y="310.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >2</text>
+<rect x="722.9" y="288" width="22.0" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="726.9" y="317" width="14.0" height="3.5" rx="1.75" fill="#eb5f64"/>
+<text x="733.9" y="310.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >4</text>
+<text x="733.9" y="340.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="12.5" font-weight="400" fill="#9c5363" text-anchor="middle" >16</text>
+<rect x="748.9" y="288" width="22.0" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="752.9" y="317" width="14.0" height="3.5" rx="1.75" fill="#648eae"/>
+<text x="759.9" y="310.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >,</text>
+<rect x="774.9" y="288" width="22.0" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="778.9" y="317" width="14.0" height="3.5" rx="1.75" fill="#6499a6"/>
+<text x="785.9" y="310.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >2</text>
+<rect x="800.9" y="288" width="22.0" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="804.9" y="317" width="14.0" height="3.5" rx="1.75" fill="#64a49e"/>
+<text x="811.9" y="310.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >5</text>
+<rect x="826.9" y="288" width="22.0" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="830.9" y="317" width="14.0" height="3.5" rx="1.75" fill="#6faf99"/>
+<text x="837.9" y="310.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >0</text>
+<text x="930.0" y="278.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="700" fill="#3a3a3a" text-anchor="end" >reads: $6,224,250</text>
+<text x="30.0" y="370.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#9c5363" text-anchor="start" >Dolos, empty system prompt</text>
+<rect x="30.0" y="380" width="27.8" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="34.0" y="409" width="19.8" height="3.5" rx="1.75" fill="#648eae"/>
+<text x="43.9" y="402.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >In</text>
+<text x="43.9" y="432.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="12.5" font-weight="400" fill="#666666" text-anchor="middle" >1</text>
+<rect x="61.8" y="380" width="43.6" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="65.8" y="409" width="35.6" height="3.5" rx="1.75" fill="#6499a6"/>
+<text x="83.6" y="402.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >the</text>
+<rect x="109.4" y="380" width="75.2" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="113.4" y="409" width="67.2" height="3.5" rx="1.75" fill="#64a49e"/>
+<text x="147.0" y="402.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >quarter</text>
+<rect x="188.6" y="380" width="22.0" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="192.6" y="409" width="14.0" height="3.5" rx="1.75" fill="#6faf99"/>
+<text x="199.6" y="402.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >,</text>
+<rect x="214.6" y="380" width="43.6" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="218.6" y="409" width="35.6" height="3.5" rx="1.75" fill="#7bb993"/>
+<text x="236.4" y="402.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >the</text>
+<rect x="262.2" y="380" width="67.3" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="266.2" y="409" width="59.3" height="3.5" rx="1.75" fill="#90c18b"/>
+<text x="295.9" y="402.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >region</text>
+<rect x="333.5" y="380" width="83.1" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="337.5" y="409" width="75.1" height="3.5" rx="1.75" fill="#a9c882"/>
+<text x="375.1" y="402.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >reported</text>
+<rect x="420.6" y="380" width="59.4" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="424.6" y="409" width="51.4" height="3.5" rx="1.75" fill="#c4cb78"/>
+<text x="450.3" y="402.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >total</text>
+<rect x="484.0" y="380" width="59.4" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="488.0" y="409" width="51.4" height="3.5" rx="1.75" fill="#e3cc6d"/>
+<text x="513.7" y="402.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >sales</text>
+<rect x="547.4" y="380" width="35.7" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="551.4" y="409" width="27.7" height="3.5" rx="1.75" fill="#f4c466"/>
+<text x="565.3" y="402.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >of</text>
+<rect x="587.1" y="380" width="27.8" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="591.1" y="409" width="19.8" height="3.5" rx="1.75" fill="#f4b264"/>
+<text x="601.0" y="402.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >$</text>
+<rect x="618.9" y="380" width="22.0" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="622.9" y="409" width="14.0" height="3.5" rx="1.75" fill="#f3a062"/>
+<text x="629.9" y="402.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >6</text>
+<rect x="644.9" y="380" width="22.0" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="648.9" y="409" width="14.0" height="3.5" rx="1.75" fill="#f08c5e"/>
+<text x="655.9" y="402.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >,</text>
+<rect x="670.9" y="380" width="22.0" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="674.9" y="409" width="14.0" height="3.5" rx="1.75" fill="#ee7a5c"/>
+<text x="681.9" y="402.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >2</text>
+<rect x="696.9" y="380" width="22.0" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="700.9" y="409" width="14.0" height="3.5" rx="1.75" fill="#ec6d60"/>
+<text x="707.9" y="402.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >2</text>
+<rect x="722.9" y="380" width="51.5" height="34" rx="7" fill="#f5e2e3"/>
+<rect x="726.9" y="409" width="43.5" height="3.5" rx="1.75" fill="#eb5f64"/>
+<text x="748.7" y="402.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="700" fill="#9c5363" text-anchor="middle" >,\n\n</text>
+<text x="748.7" y="432.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="12.5" font-weight="400" fill="#9c5363" text-anchor="middle" >16</text>
+<rect x="778.4" y="380" width="22.0" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="782.4" y="409" width="14.0" height="3.5" rx="1.75" fill="#648eae"/>
+<text x="789.4" y="402.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >2</text>
+<rect x="804.4" y="380" width="22.0" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="808.4" y="409" width="14.0" height="3.5" rx="1.75" fill="#6499a6"/>
+<text x="815.4" y="402.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >5</text>
+<rect x="830.4" y="380" width="22.0" height="34" rx="7" fill="#f3f1ea"/>
+<rect x="834.4" y="409" width="14.0" height="3.5" rx="1.75" fill="#64a49e"/>
+<text x="841.4" y="402.0" font-family="ui-monospace, Consolas, Menlo, monospace" font-size="13" font-weight="400" fill="#3a3a3a" text-anchor="middle" >0</text>
+<text x="930.0" y="370.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="700" fill="#9c5363" text-anchor="end" >reads: $6,22, [blank lines] 250</text>
+</svg>

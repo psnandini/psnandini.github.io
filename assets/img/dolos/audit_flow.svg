@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 210" role="img" aria-label="Four-step audit: generate replies with the suspect model only; track each token's log-probability at every reply position; Fourier-transform to get rhythm strength and phase coherence across replies; flag strong rhythms that land on the same positions.">
+<rect width="960" height="210" fill="#ffffff"/>
+<rect x="24.0" y="40.0" width="200.0" height="130.0" rx="16" fill="#f0eee6"/>
+<circle cx="54" cy="72" r="15" fill="#5e5d59" opacity="0.85"/>
+<text x="54.0" y="77.5" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle" >1</text>
+<text x="78.0" y="78.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#5e5d59" text-anchor="start" >Generate</text>
+<text x="124.0" y="116.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#3a3a3a" text-anchor="middle" >replies with the</text>
+<text x="124.0" y="138.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#3a3a3a" text-anchor="middle" >suspect model only</text>
+<line x1="230.0" y1="105.0" x2="250.0" y2="105.0" stroke="#b9b6ac" stroke-width="2.2"/><path d="M254.0,105.0 L245.0,109.3 L245.0,100.7 Z" fill="#b9b6ac"/>
+<rect x="260.0" y="40.0" width="200.0" height="130.0" rx="16" fill="#e9e5f4"/>
+<circle cx="290" cy="72" r="15" fill="#625a92" opacity="0.85"/>
+<text x="290.0" y="77.5" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle" >2</text>
+<text x="314.0" y="78.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#625a92" text-anchor="start" >Track every token</text>
+<text x="360.0" y="116.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#3a3a3a" text-anchor="middle" >its log-probability at</text>
+<text x="360.0" y="138.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#3a3a3a" text-anchor="middle" >every reply position</text>
+<line x1="466.0" y1="105.0" x2="486.0" y2="105.0" stroke="#b9b6ac" stroke-width="2.2"/><path d="M490.0,105.0 L481.0,109.3 L481.0,100.7 Z" fill="#b9b6ac"/>
+<rect x="496.0" y="40.0" width="200.0" height="130.0" rx="16" fill="#f0e2ed"/>
+<circle cx="526" cy="72" r="15" fill="#87507a" opacity="0.85"/>
+<text x="526.0" y="77.5" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle" >3</text>
+<text x="550.0" y="78.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#87507a" text-anchor="start" >Fourier transform</text>
+<text x="596.0" y="116.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#3a3a3a" text-anchor="middle" >rhythm strength and</text>
+<text x="596.0" y="138.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#3a3a3a" text-anchor="middle" >phase across replies</text>
+<line x1="702.0" y1="105.0" x2="722.0" y2="105.0" stroke="#b9b6ac" stroke-width="2.2"/><path d="M726.0,105.0 L717.0,109.3 L717.0,100.7 Z" fill="#b9b6ac"/>
+<rect x="732.0" y="40.0" width="200.0" height="130.0" rx="16" fill="#f5e2e3"/>
+<circle cx="762" cy="72" r="15" fill="#9c5363" opacity="0.85"/>
+<text x="762.0" y="77.5" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle" >4</text>
+<text x="786.0" y="78.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#9c5363" text-anchor="start" >Flag</text>
+<text x="832.0" y="116.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#3a3a3a" text-anchor="middle" >strong rhythms that land</text>
+<text x="832.0" y="138.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#3a3a3a" text-anchor="middle" >on the same positions</text>
+<text x="480.0" y="198.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#666666" text-anchor="middle" >No base model, no list of suspect tokens and no assumed period are needed.</text>
+</svg>

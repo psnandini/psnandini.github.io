@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 330" role="img" aria-label="Two panels. Established: trigger and 16-token period confirmed on held-out data; harm on maths, code and an agent pipeline; three heads are a necessary output bottleneck; the audit flags Dolos and none of four controls. Still open: the full training objective; what the key-dependent channel carries; how the audit fares on other models; a clean scan does not certify a safe model.">
+<rect width="960" height="330" fill="#ffffff"/>
+<rect x="30.0" y="20.0" width="436.0" height="290.0" rx="18" fill="#e9e5f4"/>
+<text x="54.0" y="56.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#625a92" text-anchor="start" >Established</text>
+<circle cx="66" cy="95" r="12" fill="#625a92" opacity="0.85"/>
+<path d="M60,95 l4.5,4.5 l8,-9" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="90.0" y="100.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#3a3a3a" text-anchor="start" >Trigger and period, confirmed on held-out data</text>
+<circle cx="66" cy="147" r="12" fill="#625a92" opacity="0.85"/>
+<path d="M60,147 l4.5,4.5 l8,-9" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="90.0" y="152.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#3a3a3a" text-anchor="start" >Harm on maths, code and an agent pipeline</text>
+<circle cx="66" cy="199" r="12" fill="#625a92" opacity="0.85"/>
+<path d="M60,199 l4.5,4.5 l8,-9" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="90.0" y="204.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#3a3a3a" text-anchor="start" >Three heads are a necessary output bottleneck</text>
+<circle cx="66" cy="251" r="12" fill="#625a92" opacity="0.85"/>
+<path d="M60,251 l4.5,4.5 l8,-9" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="90.0" y="256.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#3a3a3a" text-anchor="start" >Audit flags Dolos and none of four controls</text>
+<rect x="494.0" y="20.0" width="436.0" height="290.0" rx="18" fill="#f8e9dd"/>
+<text x="518.0" y="56.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#946247" text-anchor="start" >Still open</text>
+<circle cx="530" cy="95" r="12" fill="#fdf8f3"/>
+<text x="530.0" y="101.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#946247" text-anchor="middle" >?</text>
+<text x="554.0" y="100.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#3a3a3a" text-anchor="start" >Dolos’s full training objective</text>
+<circle cx="530" cy="147" r="12" fill="#fdf8f3"/>
+<text x="530.0" y="153.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#946247" text-anchor="middle" >?</text>
+<text x="554.0" y="152.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#3a3a3a" text-anchor="start" >What the key-dependent channel carries</text>
+<circle cx="530" cy="199" r="12" fill="#fdf8f3"/>
+<text x="530.0" y="205.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#946247" text-anchor="middle" >?</text>
+<text x="554.0" y="204.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#3a3a3a" text-anchor="start" >How the audit fares on other models</text>
+<circle cx="530" cy="251" r="12" fill="#fdf8f3"/>
+<text x="530.0" y="257.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#946247" text-anchor="middle" >?</text>
+<text x="554.0" y="256.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#3a3a3a" text-anchor="start" >A clean scan does not certify a safe model</text>
+</svg>

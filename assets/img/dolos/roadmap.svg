@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" role="img" aria-label="Roadmap of four steps: explain the channel; build a benchmark of model organisms with benign controls; combine the periodicity scan with counterfactual information-flow tests; release an open-source audit tool.">
+<rect width="960" height="300" fill="#ffffff"/>
+<rect x="12.0" y="52.0" width="216.0" height="196.0" rx="18" fill="#f0eee6"/>
+<circle cx="120" cy="92" r="20" fill="#5e5d59" opacity="0.85"/>
+<text x="120.0" y="98.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle" >1</text>
+<text x="120.0" y="144.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#5e5d59" text-anchor="middle" >Explain the channel</text>
+<text x="120.0" y="172.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#3a3a3a" text-anchor="middle" >Is the clock the same</text>
+<text x="120.0" y="194.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#3a3a3a" text-anchor="middle" >mechanism as the</text>
+<text x="120.0" y="216.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#3a3a3a" text-anchor="middle" >key-dependent channel?</text>
+<line x1="230.0" y1="150.0" x2="246.0" y2="150.0" stroke="#b9b6ac" stroke-width="2.2"/><path d="M250.0,150.0 L241.0,154.3 L241.0,145.7 Z" fill="#b9b6ac"/>
+<rect x="252.0" y="52.0" width="216.0" height="196.0" rx="18" fill="#e9e5f4"/>
+<circle cx="360" cy="92" r="20" fill="#625a92" opacity="0.85"/>
+<text x="360.0" y="98.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle" >2</text>
+<text x="360.0" y="144.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#625a92" text-anchor="middle" >Build a benchmark</text>
+<text x="360.0" y="172.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#3a3a3a" text-anchor="middle" >Model organisms on</text>
+<text x="360.0" y="194.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#3a3a3a" text-anchor="middle" >several open base models,</text>
+<text x="360.0" y="216.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#3a3a3a" text-anchor="middle" >plus benign controls</text>
+<line x1="470.0" y1="150.0" x2="486.0" y2="150.0" stroke="#b9b6ac" stroke-width="2.2"/><path d="M490.0,150.0 L481.0,154.3 L481.0,145.7 Z" fill="#b9b6ac"/>
+<rect x="492.0" y="52.0" width="216.0" height="196.0" rx="18" fill="#f0e2ed"/>
+<circle cx="600" cy="92" r="20" fill="#87507a" opacity="0.85"/>
+<text x="600.0" y="98.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle" >3</text>
+<text x="600.0" y="144.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#87507a" text-anchor="middle" >Combine audits</text>
+<text x="600.0" y="172.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#3a3a3a" text-anchor="middle" >Periodicity scan plus</text>
+<text x="600.0" y="194.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#3a3a3a" text-anchor="middle" >counterfactual tests of</text>
+<text x="600.0" y="216.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#3a3a3a" text-anchor="middle" >information flow</text>
+<line x1="710.0" y1="150.0" x2="726.0" y2="150.0" stroke="#b9b6ac" stroke-width="2.2"/><path d="M730.0,150.0 L721.0,154.3 L721.0,145.7 Z" fill="#b9b6ac"/>
+<rect x="732.0" y="52.0" width="216.0" height="196.0" rx="18" fill="#f5e2e3"/>
+<circle cx="840" cy="92" r="20" fill="#9c5363" opacity="0.85"/>
+<text x="840.0" y="98.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle" >4</text>
+<text x="840.0" y="144.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#9c5363" text-anchor="middle" >Release a tool</text>
+<text x="840.0" y="172.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#3a3a3a" text-anchor="middle" >An open-source audit</text>
+<text x="840.0" y="194.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#3a3a3a" text-anchor="middle" >anyone can run before</text>
+<text x="840.0" y="216.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="14.5" font-weight="400" fill="#3a3a3a" text-anchor="middle" >deploying a model</text>
+<text x="480.0" y="32.0" font-family="Manrope, Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#1f1f1f" text-anchor="middle" >From one model organism to a routine pre-deployment check</text>
+</svg>
